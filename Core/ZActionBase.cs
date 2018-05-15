@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using WebAutomation.Core.Base;
 using WebAutomation.Core.Support;
@@ -152,7 +153,8 @@ namespace WebAutomation.Core
             finally
             {
                 QuitDriver();
-                PressEnterKeyToContinue();
+                Console.WriteLine("Task is completed ...");
+                Thread.Sleep(500);
             }
         }
 
@@ -166,7 +168,8 @@ namespace WebAutomation.Core
             finally
             {
                 QuitDriver();
-                PressEnterKeyToContinue();
+                Console.WriteLine("Task is completed ...");
+                Thread.Sleep(500);
             }
         }
 
